@@ -1,0 +1,46 @@
+header {
+    height: 5em;
+    line-height: 5em; 
+    background-color: #042c8c;
+    color: #fff;
+    font-weight: bold;    
+}
+
+.logo-nav{
+    padding-left: 4em;
+}
+
+.login-nav {
+    cursor: pointer;
+    text-align: right;
+}
+
+.login-nav:hover {
+    color: #abc3fc;
+}
+
+.signup-nav {
+    text-align: left;
+}
+
+.signup-nav .btn-default {
+    color: #042c8c;
+    font-weight: bold;
+}
+
+.signup-nav .btn-default:hover {
+    color: #abc3fc;
+    background-color: #fff;
+}
+
+.nav-tabs {
+    background-color: #042c8c;
+}
+
+.nav-tabs a {
+    color: #fff;
+}
+
+.tab-content {
+    color: #000;
+}
