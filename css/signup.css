@@ -1,0 +1,19 @@
+.popuplike {
+     text-align: center;
+}
+.login-field {
+    margin-top: -1em; 
+    border-radius: 10px; 
+    background-color: #fff;
+    height: 25em;
+    box-shadow: 0px 2px 10px #888888;
+}
+.topmargin2em {
+    margin-top:2em;
+}
+.login-nav-single {
+    cursor: pointer;
+}
+.login-nav-single:hover {
+    color: #abc3fc;
+}
