@@ -1,3 +1,4 @@
+html,body { height: 100%; }
 header {
     height: 5em;
     line-height: 5em; 
@@ -5,50 +6,57 @@ header {
     color: #fff;
     font-weight: bold;    
 }
-
+article {
+    height:100%;
+}
 .container {
     width: 100%;
 }
-
 .logo-nav{
     padding-left: 4em;
 }
-
 .logo-nav img {
     height: 2em;
     cursor: pointer;
 }
-
 .login-nav {
     cursor: pointer;
     text-align: right;
 }
-
 .login-nav:hover {
     color: #abc3fc;
 }
-
 .signup-nav {
     text-align: left;
 }
-
 .signup-nav .btn-default {
     color: #00aeec;
     font-weight: bold;
 }
-
 .signup-nav .btn-default:hover {
     color: #abc3fc;
 }
-
 .nav-tabs {
     background-color: #00aeec;
+    border-bottom: none;
 }
-
+.nav-tabs>li {
+    margin-bottom: -2px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
+    background-color: #008cbe;
+    color: #fff;
+    font-weight: bold;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border: none;
+}
 .nav-tabs a {
     color: #fff;
 }
-
-.tab-content {
-    color: #000;
+.nav-tabs a:hover {
+    color: #008cbe;
+}
+.bottompanel, .bottompanel .tab-content, .bottompanel .tab-content #channel, .bottompanel .tab-content #channel .container, .bottompanel .tab-content #channel .container>.row {
+    height:100%;
 }

@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/run.js"></script>
     </head>
 
     <body>
@@ -19,29 +20,26 @@
                  <div class="col-xs-2 login-nav" onclick="location.href='login.html';">Login</div>
                  <div class="col-xs-2 signup-nav"><button type="submit" class="btn btn-default" onclick="location.href='signup.html';">Sign Up</button></div>
              </div>
-             <div class="row">
+		</header>
+        
+        <article class="container">
+            <div class="row bottompanel">
                 <div role="tabpanel">
                      <ul class="nav nav-tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
                         <li role="presentation"><a href="#channel" aria-controls="profile" role="tab" data-toggle="tab">Channel Page</a></li>
-                      </ul>
-                      <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="home">HOME DIR</div>
-                        <div role="tabpanel" class="tab-pane" id="channel">CHANNEL HERE</div>
-                      </div>
+                      </ul>                      
                  </div>
-             </div>
-		</header>
-        
-
-        <article class="container">
-            <div class="row">
-                
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">HOME DIR</div>
+                    <div role="tabpanel" class="tab-pane" id="channel"></div>
+                </div>
             </div>
-        </article>            
+        </article>
+        
 		<footer class="container">
             <div class="row">
-
+                
             </div>
     	</footer>
         </body>

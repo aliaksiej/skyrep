@@ -1,0 +1,18 @@
+html,body { 
+    height: 100%; margin: 0px; padding: 0px; 
+}
+.categories, .countries, .countries a {
+    background-color: #008cbe;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+}
+.countries li:hover {
+    background-color: #00aeec;
+}
+.panel-heading a {
+    text-decoration: none;
+}
+.panel-body {
+    padding: 0;
+}
