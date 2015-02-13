@@ -24,4 +24,9 @@ html,body {
     max-height: 21em;
 	overflow: hidden;
 	overflow-y: auto;
-  }
+}
+.countries .nav-pills{
+    max-height: 15em;
+	overflow: hidden;
+	overflow-y: auto;
+}

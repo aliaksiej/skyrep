@@ -6,3 +6,5 @@ function toggleChevron(e) {
 }
 $('#accordion').on('hidden.bs.collapse', toggleChevron);
 $('#accordion').on('shown.bs.collapse', toggleChevron);
+$('#accordionCountries').on('hidden.bs.collapse', toggleChevron);
+$('#accordionCountries').on('shown.bs.collapse', toggleChevron);
