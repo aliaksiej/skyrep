@@ -20,3 +20,8 @@ html,body {
     background-color: #00aeec;
     color: #fff;
 }
+.nav-pills {
+    max-height: 21em;
+	overflow: hidden;
+	overflow-y: auto;
+  }
