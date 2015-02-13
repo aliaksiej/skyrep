@@ -1,18 +1,22 @@
 html,body { 
     height: 100%; margin: 0px; padding: 0px; 
 }
-.categories, .countries, .countries a {
+.categories, .countries {
     background-color: #008cbe;
     text-align: center;
     color: #fff;
     height: 100%;
-}
-.countries li:hover {
-    background-color: #00aeec;
 }
 .panel-heading a {
     text-decoration: none;
 }
 .panel-body {
     padding: 0;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover{
+    background-color: red;
+}
+.nav-pills>li>a:hover {
+    background-color: #00aeec;
+    color: #fff;
 }
