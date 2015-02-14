@@ -60,3 +60,7 @@ article {
 .bottompanel, .bottompanel .tab-content, .bottompanel .tab-content #channel, .bottompanel .tab-content #channel .container, .bottompanel .tab-content #channel .container>.row {
     height:100%;
 }
+.nav-tabs>li.active>a:hover{
+    background-color: #008cbe;
+    color: #fff;
+}
