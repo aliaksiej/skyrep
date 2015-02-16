@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+        <title>Skyweb TV - Login</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+		<header class="container">
+			 <div class="row">
+                 <div class="col-xs-10 logo-nav">
+                     <img src="img/Logo.png" alt="Skyweb TV" onclick="location.href='/';">
+                 </div>
+                 <div class="col-xs-2 signup-nav"><button type="submit" class="btn btn-default" onclick="location.href='/signup';">Sign Up</button></div>
+             </div>
+		</header>
+        
+
+        <article class="container">
+            <div class="row popuplike">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-6 login-field">
+                    <form action="/login" method="post" id="loginForm">
+                        <div class="row">
+                            <h3>Login</h3>
+                        </div>
+                        <div class="row topmargin2em">
+                            <div class="col-xs-2"></div>
+                            <div class="col-xs-8">
+                                <input type="text" class="form-control" name="email" placeholder="Email">
+                            </div>
+                            <div class="col-xs-2"></div>
+                        </div>
+                        <div class="row topmargin2em">
+                            <div class="col-xs-2"></div>
+                            <div class="col-xs-8">
+                                <input type="password" class="form-control" name="password" placeholder="Password">
+                            </div>
+                            <div class="col-xs-2"></div>
+                        </div>
+                        <div class="row topmargin2em">
+                            <div class="col-xs-2"></div>
+                            <div class="col-xs-8">
+                                <button type="submit" class="btn btn-danger btn-lg">Login</button>
+                            </div>
+                            <div class="col-xs-2"></div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="col-xs-3"></div>
+                <div class="col-xs-6 col-xs-offset-3">
+                    <% if (message.length > 0) { %>
+                        <div class="alert alert-danger"><%= message %></div>
+                    <% } %>
+                </div>
+            </div>
+        </article>    
+       
+        
+		<footer class="container">
+            <div class="row">
+
+            </div>
+    	</footer>
+        </body>
+</html>
