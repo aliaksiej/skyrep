@@ -1,14 +1,11 @@
-// config/passport.js
-
-// load all the things we need
 var LocalStrategy   = require('passport-local').Strategy;
 
 // load up the user model
 var User       		= require('../app/models/user');
+var validator       = require('validator');
 
 // expose this function to our app using module.exports
 module.exports = function(passport) {
-
 	// =========================================================================
     // passport session setup ==================================================
     // =========================================================================
@@ -39,8 +36,8 @@ module.exports = function(passport) {
         passwordField : 'password',
         passReqToCallback : true // allows us to pass back the entire request to the callback
     },
-    function(req, email, password, done) {
-
+    function(req, email, password, done) {    
+    if(!validator.isEmail(email)) return done(null, false, req.flash('signupMessage', 'Please enter a valid email.'));    
 		// find a user whose email is the same as the forms email
 		// we are checking to see if the user trying to login already exists
         User.findOne({ 'local.email' :  email }, function(err, user) {

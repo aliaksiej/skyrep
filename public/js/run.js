@@ -1,5 +1,8 @@
-//load pages on index.html with AJAX
-    $(function() { 
-        $('#channel').load('channelpage.html');
-        $('#home').load('homepage.html');
+    $(function() {         
+		$.get("channelpage.html", function(res, req) {
+			$("#channel").html(res, req);
+		});
+        $.get("homepage.html", function(res, req) {
+			$("#home").html(res, req);
+		});
     });

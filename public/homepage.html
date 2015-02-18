@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <head>    
     <link rel="stylesheet" href="css/homepage.css">
     <script type="text/javascript" src="js/homepage.js"></script>
@@ -11,7 +10,7 @@
             <div class="row details"></div>
             <div class="row watchtv"><h2>Now Showing</h2></div>
             <div class="row slideshow"></div>
-            <div class="row bottombars">
+            <div class="row bottombars"><%= user.local.email %>
                 <div class="col-xs-2 col-xs-offset-4">
                     <button type="submit" class="btn btn-xlarge btn-primary" onclick="location.href='/login';">Login</button>
                 </div>
