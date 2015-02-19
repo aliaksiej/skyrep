@@ -1,1 +1,1 @@
-node server
+cmd
